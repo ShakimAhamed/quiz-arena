@@ -15,7 +15,7 @@ export default function Dashboard() {
 
   // Load leaderboard
   useEffect(() => {
-    fetch("http://localhost:5000/api/quiz/leaderboard")
+    fetch(`${import.meta.env.VITE_API_URL}/api/quiz/leaderboard`)
       .then((res) => res.json())
       .then(setLeaderboard);
   }, []);
@@ -26,7 +26,7 @@ export default function Dashboard() {
 
     if (!userId) return;
 
-    fetch("http://localhost:5000/api/quiz/leaderboard")
+    fetch(`${import.meta.env.VITE_API_URL}/api/quiz/leaderboard`)
       .then((res) => res.json())
       .then((users) => {
         const me = users.find((u: UserScore) => u._id === userId);

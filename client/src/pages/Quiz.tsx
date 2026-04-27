@@ -24,7 +24,7 @@ export default function lQuiz() {
   const [time, setTime] = useState(10);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/quiz/questions")
+    fetch(`${import.meta.env.VITE_API_URL}/api/quiz/questions`)
       .then((res) => res.json())
       .then(setQuestions);
   }, []);
@@ -65,7 +65,7 @@ export default function lQuiz() {
     if (nextIndex < questions.length) {
       setIndex(nextIndex);
     } else {
-      await fetch("http://localhost:5000/api/quiz/score", {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/quiz/score`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

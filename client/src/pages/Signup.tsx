@@ -10,7 +10,7 @@ export default function Signup() {
   const signup = async () => {
     if (!email || !password) return alert("Fill all fields");
 
-    await fetch("http://localhost:5000/api/auth/signup", {
+    await fetch(`${import.meta.env.VITE_API_URL}/api/auth/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
