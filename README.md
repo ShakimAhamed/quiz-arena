@@ -84,6 +84,7 @@ The project focuses on **clean architecture, performance, and smooth UI experien
 
 ## 🏗️ Project Structure
 
+```bash
 Quiz-Arena/
 │
 ├── client/ # Frontend (React)
@@ -101,6 +102,9 @@ Quiz-Arena/
 │ └── server.js
 │
 └── README.md
+```
+
+---
 
 ## 🚀 Getting Started
 
@@ -144,3 +148,17 @@ From root:
 ```bash
 npm run dev
 ```
+
+## 👨‍💻 Author
+
+**Shakim Ahamed**
+
+Software Engineer
+
+GitHub: https://github.com/ShakimAhamed
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
