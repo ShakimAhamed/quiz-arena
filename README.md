@@ -12,9 +12,9 @@ A modern full-stack quiz application with authentication, real-time scoring, and
 
 ## 📸 Preview
 
-| Login                        | Quiz                       | Dashboard                            |
-| ---------------------------- | -------------------------- | ------------------------------------ |
-| ![login](./public/login.PNG) | ![quiz](./public/quiz.PNG) | ![dashboard](./public/dashboard.PNG) |
+| Login                               | Quiz                              | Dashboard                                   |
+| ----------------------------------- | --------------------------------- | ------------------------------------------- |
+| ![login](./client/public/login.PNG) | ![quiz](./client/public/quiz.PNG) | ![dashboard](./client/public/dashboard.PNG) |
 
 ---
 
@@ -83,3 +83,64 @@ The project focuses on **clean architecture, performance, and smooth UI experien
 ---
 
 ## 🏗️ Project Structure
+
+Quiz-Arena/
+│
+├── client/ # Frontend (React)
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── hooks/
+│ │ └── ...
+│
+├── server/ # Backend (Node.js)
+│ ├── models/
+│ ├── routes/
+│ ├── controllers/
+│ ├── middleware/
+│ └── server.js
+│
+└── README.md
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/quiz-arena.git
+cd quiz-arena
+```
+
+### 2️⃣ Install dependencies
+
+📦 Backend
+
+```bash
+cd server
+npm install
+```
+
+📦 Frontend
+
+```bash
+cd client
+npm install
+```
+
+### 3️⃣ Setup Environment Variables
+
+### Create .env file in /server:
+
+```bash
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+### 4️⃣ Run the app
+
+From root:
+
+```bash
+npm run dev
+```
