@@ -15,7 +15,12 @@ dns.setServers(["1.1.1.1", "1.0.0.1"]);
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://quiz-arena.vercel.app",
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // ✅ MongoDB connection
