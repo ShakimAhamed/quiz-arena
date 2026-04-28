@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Screen from "../components/Screen";
 import TimerBar from "../components/TimerBar";
 import QuestionCard from "../components/QuestionCard";
-
+import { useNavigate } from "react-router-dom";
 type Question = {
   question: string;
   options: string[];
@@ -13,7 +13,7 @@ type Question = {
 
 export default function lQuiz() {
   const [phase, setPhase] = useState<"start" | "play" | "end">("start");
-
+  const nav = useNavigate();
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
 
@@ -139,6 +139,12 @@ export default function lQuiz() {
               onClick={resetGame}
             >
               Play Again
+            </button>
+            <button
+              className="bg-green-500 px-5 py-2 rounded w-full"
+              onClick={() => nav(`/dashboard`)}
+            >
+              Dashboard
             </button>
           </Screen>
         )}

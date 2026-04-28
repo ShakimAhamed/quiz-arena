@@ -6,7 +6,7 @@ Built with a focus on **scalable architecture, authentication systems, and engag
 
 🔗 **GitHub Repository:** https://github.com/ShakimAhamed/quiz-arena
 
-<!-- 🌐 **Live Demo:** https://your-live-link.com -->
+🌐 **Live Demo:** https://quiz-arena-rouge.vercel.app
 
 ---
 
