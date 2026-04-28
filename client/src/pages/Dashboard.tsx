@@ -38,7 +38,7 @@ export default function Dashboard() {
 
   const logout = () => {
     localStorage.clear();
-    nav("/login");
+    nav(`${import.meta.env.VITE_API_URL}/login`);
   };
 
   return (
@@ -71,7 +71,7 @@ export default function Dashboard() {
       {/* Actions */}
       <div className="mb-8">
         <button
-          onClick={() => nav("/quiz")}
+          onClick={() => nav(`${import.meta.env.VITE_API_URL}/quiz`)}
           className="bg-blue-500 px-6 py-3 rounded-lg text-lg"
         >
           🚀 Start Quiz

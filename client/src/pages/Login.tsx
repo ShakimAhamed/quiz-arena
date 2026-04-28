@@ -17,13 +17,13 @@ export default function Login() {
     });
 
     const data = await res.json();
-    console.log(`${import.meta.env.VITE_API_URL}/api/auth/login`)
+    
     if (!data.token) return alert("Invalid credentials");
 
     localStorage.setItem("token", data.token);
     localStorage.setItem("userId", data.userId);
 
-    nav("/dashboard");
+    nav(`${import.meta.env.VITE_API_URL}/dashboard`);
   };
 
   return (
@@ -60,7 +60,7 @@ export default function Login() {
         </motion.button>
 
         <p className="text-sm text-gray-400 mt-4 text-center">
-          No account? <a href="/signup" className="text-blue-400">Sign up</a>
+          No account? <a href={`${import.meta.env.VITE_API_URL}/signup`} className="text-blue-400">Sign up</a>
         </p>
       </motion.div>
     </div>
