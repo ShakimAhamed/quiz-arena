@@ -1,3 +1,8 @@
+![React](https://img.shields.io/badge/React-18-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
+![Status](https://img.shields.io/badge/Status-Live-success)
+
 # 🚀 🎮 Quiz Arena
 
 A high-performance, full-stack quiz platform designed to simulate real-world **interactive gaming and data-driven applications**.
@@ -7,6 +12,14 @@ Built with a focus on **scalable architecture, authentication systems, and engag
 🔗 **GitHub Repository:** https://github.com/ShakimAhamed/quiz-arena
 
 🌐 **Live Demo:** https://quiz-arena-rouge.vercel.app
+
+---
+
+## 📸 Preview
+
+| Login                               | Quiz                              | Dashboard                                   |
+| ----------------------------------- | --------------------------------- | ------------------------------------------- |
+| ![login](./client/public/login.PNG) | ![quiz](./client/public/quiz.PNG) | ![dashboard](./client/public/dashboard.PNG) |
 
 ---
 
@@ -95,6 +108,16 @@ The goal was to combine:
 
 ---
 
+## 🎯 What This Project Demonstrates
+
+- Building scalable full-stack applications
+- Implementing secure authentication systems (JWT)
+- Designing interactive, state-driven UI systems
+- Handling real-time gameplay logic
+- Structuring clean and maintainable frontend & backend architecture
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -117,11 +140,13 @@ The goal was to combine:
 
 ---
 
-## 📸 Preview
+## 🚀 Deployment
 
-| Login                               | Quiz                              | Dashboard                                   |
-| ----------------------------------- | --------------------------------- | ------------------------------------------- |
-| ![login](./client/public/login.PNG) | ![quiz](./client/public/quiz.PNG) | ![dashboard](./client/public/dashboard.PNG) |
+- Frontend: Vercel
+- Backend: Render
+- Database: MongoDB Atlas
+
+This project is fully deployed as a production-ready full-stack application with live API integration.
 
 ---
 
@@ -154,7 +179,7 @@ Quiz-Arena/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/quiz-arena.git
+git clone https://github.com/ShakimAhamed/quiz-arena.git
 cd quiz-arena
 ```
 
