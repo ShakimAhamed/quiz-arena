@@ -17,7 +17,7 @@ export default function Login() {
     });
 
     const data = await res.json();
-
+    console.log(`${import.meta.env.VITE_API_URL}/api/auth/login`)
     if (!data.token) return alert("Invalid credentials");
 
     localStorage.setItem("token", data.token);

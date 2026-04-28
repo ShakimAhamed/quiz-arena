@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://quiz-arena.vercel.app",
+    origin: "https://quiz-arena-rouge.vercel.app",
     credentials: true,
   })
 );
