@@ -135,13 +135,13 @@ export default function lQuiz() {
             <p className="mb-4">Streak: {streak}</p>
 
             <button
-              className="bg-green-500 px-5 py-2 rounded w-full"
+              className="bg-green-500 px-5 py-2 mb-2 rounded w-full"
               onClick={resetGame}
             >
               Play Again
             </button>
             <button
-              className="bg-green-500 px-5 py-2 rounded w-full"
+              className="bg-blue-500 px-5 py-2 rounded w-full"
               onClick={() => nav(`/dashboard`)}
             >
               Dashboard
