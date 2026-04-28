@@ -23,7 +23,7 @@ export default function Login() {
     localStorage.setItem("token", data.token);
     localStorage.setItem("userId", data.userId);
 
-    nav(`${import.meta.env.VITE_API_URL}/dashboard`);
+    nav(`/dashboard`);
   };
 
   return (
@@ -60,7 +60,7 @@ export default function Login() {
         </motion.button>
 
         <p className="text-sm text-gray-400 mt-4 text-center">
-          No account? <a href={`${import.meta.env.VITE_API_URL}/signup`} className="text-blue-400">Sign up</a>
+          No account? <a href={`/signup`} className="text-blue-400">Sign up</a>
         </p>
       </motion.div>
     </div>

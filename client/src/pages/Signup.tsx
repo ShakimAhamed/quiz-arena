@@ -18,7 +18,7 @@ export default function Signup() {
       body: JSON.stringify({ email, password }),
     });
 
-    nav(`${import.meta.env.VITE_API_URL}/login`);
+    nav(`/login`);
   };
 
   return (
@@ -56,7 +56,7 @@ export default function Signup() {
 
         <p className="text-sm text-gray-400 mt-4 text-center">
           Already have an account?{" "}
-          <a href={`${import.meta.env.VITE_API_URL}/login`} className="text-blue-400">
+          <a href={`/login`} className="text-blue-400">
             Login
           </a>
         </p>
