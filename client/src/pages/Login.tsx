@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -60,7 +60,7 @@ export default function Login() {
         </motion.button>
 
         <p className="text-sm text-gray-400 mt-4 text-center">
-          No account? <a href={`/signup`} className="text-blue-400">Sign up</a>
+          No account? <Link to={`/signup`} className="text-blue-400">Sign up</Link>
         </p>
       </motion.div>
     </div>

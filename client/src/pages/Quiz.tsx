@@ -22,7 +22,14 @@ export default function lQuiz() {
 
   const [selected, setSelected] = useState<string | null>(null);
   const [time, setTime] = useState(10);
-
+  const resetGame = () => {
+    setPhase("start");
+    setScore(0);
+    setStreak(0);
+    setIndex(0);
+    setTime(10); // or your default
+    setSelected(null);
+  };
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/quiz/questions`)
       .then((res) => res.json())
@@ -129,7 +136,7 @@ export default function lQuiz() {
 
             <button
               className="bg-green-500 px-5 py-2 rounded w-full"
-              onClick={() => window.location.reload()}
+              onClick={resetGame}
             >
               Play Again
             </button>
